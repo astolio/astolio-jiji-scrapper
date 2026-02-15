@@ -2,6 +2,8 @@ import type { BrowserContext } from 'playwright';
 import { getNextQueued, incrementAttempts, markStatus } from '../data/queueStore';
 import { upsertLead } from '../data/leadsStore';
 import { scrapeListing } from './scrapeListing';
+import { pushLeadToConvex } from '../convexPush';
+
 
 function randomBetween(min: number, max: number) {
   return Math.floor(min + Math.random() * (max - min));
@@ -16,7 +18,7 @@ export async function runQueue(
 
   while (true) {
     const item = getNextQueued();
-    if (!item) {
+if (!item) {
       console.log('✅ No queued items left.');
       break;
     }
@@ -37,6 +39,25 @@ export async function runQueue(
 
       // 🔒 DEDUPE + SAVE
       const result = upsertLead(lead);
+
+      await pushLeadToConvex({
+        source: "jiji",
+        name: lead.sellerName,
+        phoneRaw: lead.phoneRaw,
+        phoneNormalized: lead.phoneNormalized,
+        category: lead.category,
+        whatsapp: lead.phoneNormalized
+          ? `https://wa.me/${lead.phoneNormalized}`
+          : undefined,
+        sourceMeta: {
+          listingTitle: lead.listingTitle,
+          listingUrl: lead.listingUrl,
+          categoryUrl: lead.categoryUrl,
+          scrapedAt: new Date().toISOString(),
+        },
+      });
+
+      console.log(`✅ Sent to Convex: ${lead.sellerName} — ${lead.phoneNormalized}`);
 
       if (!result.inserted) {
         // Even if duplicate, we don’t want to retry forever

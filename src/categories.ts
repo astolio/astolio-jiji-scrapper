@@ -5,8 +5,8 @@ export interface CategorySeed {
   
   export const CATEGORIES: CategorySeed[] = [
     {
-      category: 'Computer & IT Services',
-      categoryUrl: 'https://jiji.co.ke/computer-and-it-services',
+      category: 'New Builds',
+      categoryUrl: 'https://jiji.co.ke/nairobi-central/new-builds',
     },
   
     // Add more:
