@@ -1,0 +1,27 @@
+{
+  "name": "jiji-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "login": "ts-node src/index.ts login",
+    "check": "ts-node src/index.ts check",
+    "collect": "ts-node src/index.ts collect",
+    "run": "ts-node src/index.ts run",
+    "start": "ts-node src/index.ts start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "playwright": "^1.58.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "category": "Computer & IT Services",
+    "categoryUrl": "https://jiji.co.ke/computer-and-it-services",
+    "lastCollectedAt": "2026-02-15T13:49:31.149Z",
+    "totalCollected": 24,
+    "totalAddedToQueue": 24,
+    "runs": [
+      {
+        "collectedAt": "2026-02-15T13:49:31.149Z",
+        "collected": 24,
+        "addedToQueue": 24,
+        "queueTotalAfter": 24
+      }
+    ]
+  }
+]
