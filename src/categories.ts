@@ -89,6 +89,30 @@ export interface CategorySeed {
       categoryUrl: 'https://jiji.co.ke/travel-and-tourism-cvs',
     },
   
+    {
+      category: 'Technology CVs',
+      categoryUrl: 'https://jiji.co.ke/technology-cvs',
+    },
+  
+    {
+      category: 'Management CVs',
+      categoryUrl: 'https://jiji.co.ke/management-cvs',
+    },
+  
+    {
+      category: 'Office CVs',
+      categoryUrl: 'https://jiji.co.ke/office-cvs',
+    },
+    {
+      category: 'Retail CVs',
+      categoryUrl: 'https://jiji.co.ke/retail-cvs',
+    },
+  
+    {
+      category: 'Other CVs',
+      categoryUrl: 'https://jiji.co.ke/other-cvs',
+    },
+  
     // Add more:
     // { category: 'Web Designers', categoryUrl: 'https://jiji.co.ke/...' },
   ];

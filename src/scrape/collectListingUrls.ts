@@ -35,7 +35,7 @@ export async function collectListingUrls(params: {
     page,
     categoryUrl,
     maxNoGrowthRounds = 3,
-    scrollDelayMsRange = [900, 1700],
+    scrollDelayMsRange = [5000, 10000],
   } = params;
 
   await page.goto(categoryUrl, { waitUntil: 'domcontentloaded' });
