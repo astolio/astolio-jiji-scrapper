@@ -4,6 +4,103 @@ export interface CategorySeed {
   }
   
   export const CATEGORIES: CategorySeed[] = [
+   
+    {
+      category: 'Building and Trades Services',
+      categoryUrl: 'https://jiji.co.ke/building-and-trades-services',
+    },
+    {
+      category: 'Automotive Services',
+      categoryUrl: 'https://jiji.co.ke/automotive-services',
+    },
+    {
+      category: 'Computer and IT Services',
+      categoryUrl: 'https://jiji.co.ke/computer-and-it-services',
+    },
+    {
+      category: 'Repair Services',
+      categoryUrl: 'https://jiji.co.ke/repair-services',
+    },
+    {
+      category: 'Cleaning Services',
+      categoryUrl: 'https://jiji.co.ke/cleaning-services',
+    },
+    {
+      category: 'Printing Services',
+      categoryUrl: 'https://jiji.co.ke/printing-services',
+    },
+    {
+      category: 'Manufacturing Services',
+      categoryUrl: 'https://jiji.co.ke/manufacturing-services',
+    },
+    {
+      category: 'Removals and Storage Services',
+      categoryUrl: 'https://jiji.co.ke/removals-and-storage-services',
+    },
+    {
+      category: 'Legal Services',
+      categoryUrl: 'https://jiji.co.ke/legal-services',
+    },
+    {
+      category: 'Tax and Financial Services',
+      categoryUrl: 'https://jiji.co.ke/tax-and-financial-services',
+    },
+    {
+      category: 'Recruitment Services',
+      categoryUrl: 'https://jiji.co.ke/recruitment-services',
+    },
+    {
+      category: 'Rental Services',
+      categoryUrl: 'https://jiji.co.ke/rental-services',
+    },
+    {
+      category: 'Travel Agents and Tours',
+      categoryUrl: 'https://jiji.co.ke/travel-agents-and-tours',
+    },
+    {
+      category: 'Classes and Courses',
+      categoryUrl: 'https://jiji.co.ke/classes-and-courses',
+    },
+    {
+      category: 'Child Care and Education Services',
+      categoryUrl: 'https://jiji.co.ke/child-care-and-education-services',
+    },
+    {
+      category: 'Health and Beauty Services',
+      categoryUrl: 'https://jiji.co.ke/health-and-beauty-services',
+    },
+    {
+      category: 'Fitness and Personal Training Services',
+      categoryUrl: 'https://jiji.co.ke/fitness-and-personal-training-services',
+    },
+    {
+      category: 'Party Catering and Event Services',
+      categoryUrl: 'https://jiji.co.ke/party-catering-and-event-services',
+    },
+    {
+      category: 'DJ and Entertainment Services',
+      categoryUrl: 'https://jiji.co.ke/dj-and-entertainment-services',
+    },
+    {
+      category: 'Wedding Venues and Services',
+      categoryUrl: 'https://jiji.co.ke/wedding-venues-and-services',
+    },
+    {
+      category: 'Photography and Video Services',
+      categoryUrl: 'https://jiji.co.ke/photography-and-video-services',
+    },
+    {
+      category: 'Pet Services',
+      categoryUrl: 'https://jiji.co.ke/pet-services',
+    }
+  
+  
+  ];
+
+
+  // { category: 'Web Designers', categoryUrl: 'https://jiji.co.ke/...' },
+
+  const cvs = [
     {
       category: 'Accounting and Finance CVs',
       categoryUrl: 'https://jiji.co.ke/accounting-and-finance-cvs',
@@ -112,8 +209,95 @@ export interface CategorySeed {
       category: 'Other CVs',
       categoryUrl: 'https://jiji.co.ke/other-cvs',
     },
+  ]
   
-    // Add more:
-    // { category: 'Web Designers', categoryUrl: 'https://jiji.co.ke/...' },
-  ];
-  
+  const services = [
+    {
+      category: 'Building and Trades Services',
+      categoryUrl: 'https://jiji.co.ke/building-and-trades-services',
+    },
+    {
+      category: 'Automotive Services',
+      categoryUrl: 'https://jiji.co.ke/automotive-services',
+    },
+    {
+      category: 'Computer and IT Services',
+      categoryUrl: 'https://jiji.co.ke/computer-and-it-services',
+    },
+    {
+      category: 'Repair Services',
+      categoryUrl: 'https://jiji.co.ke/repair-services',
+    },
+    {
+      category: 'Cleaning Services',
+      categoryUrl: 'https://jiji.co.ke/cleaning-services',
+    },
+    {
+      category: 'Printing Services',
+      categoryUrl: 'https://jiji.co.ke/printing-services',
+    },
+    {
+      category: 'Manufacturing Services',
+      categoryUrl: 'https://jiji.co.ke/manufacturing-services',
+    },
+    {
+      category: 'Removals and Storage Services',
+      categoryUrl: 'https://jiji.co.ke/removals-and-storage-services',
+    },
+    {
+      category: 'Legal Services',
+      categoryUrl: 'https://jiji.co.ke/legal-services',
+    },
+    {
+      category: 'Tax and Financial Services',
+      categoryUrl: 'https://jiji.co.ke/tax-and-financial-services',
+    },
+    {
+      category: 'Recruitment Services',
+      categoryUrl: 'https://jiji.co.ke/recruitment-services',
+    },
+    {
+      category: 'Rental Services',
+      categoryUrl: 'https://jiji.co.ke/rental-services',
+    },
+    {
+      category: 'Travel Agents and Tours',
+      categoryUrl: 'https://jiji.co.ke/travel-agents-and-tours',
+    },
+    {
+      category: 'Classes and Courses',
+      categoryUrl: 'https://jiji.co.ke/classes-and-courses',
+    },
+    {
+      category: 'Child Care and Education Services',
+      categoryUrl: 'https://jiji.co.ke/child-care-and-education-services',
+    },
+    {
+      category: 'Health and Beauty Services',
+      categoryUrl: 'https://jiji.co.ke/health-and-beauty-services',
+    },
+    {
+      category: 'Fitness and Personal Training Services',
+      categoryUrl: 'https://jiji.co.ke/fitness-and-personal-training-services',
+    },
+    {
+      category: 'Party Catering and Event Services',
+      categoryUrl: 'https://jiji.co.ke/party-catering-and-event-services',
+    },
+    {
+      category: 'DJ and Entertainment Services',
+      categoryUrl: 'https://jiji.co.ke/dj-and-entertainment-services',
+    },
+    {
+      category: 'Wedding Venues and Services',
+      categoryUrl: 'https://jiji.co.ke/wedding-venues-and-services',
+    },
+    {
+      category: 'Photography and Video Services',
+      categoryUrl: 'https://jiji.co.ke/photography-and-video-services',
+    },
+    {
+      category: 'Pet Services',
+      categoryUrl: 'https://jiji.co.ke/pet-services',
+    }
+  ]
